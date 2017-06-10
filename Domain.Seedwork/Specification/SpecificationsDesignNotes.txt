@@ -1,0 +1,27 @@
+﻿
+ABOUT SPECIFICATION PATTERN
+---------------------------
+The Specification pattern (originally defined by Eric Evans and Martin Fowler) is a good way to encapsulate query criteria and to do composition operations. 
+Definition of the pattern: http://en.wikipedia.org/wiki/Specification_pattern
+M.F and E.E. paper: http://www.martinfowler.com/apsupp/spec.pdf
+Although the original pattern worked just with in-memory-objects, we changed the implementation to be based on Lambda-Expressions against EF,
+so the performance can be much better.
+Composing several expressions with AND, OR, NOT, (composition operations) cannot be done with simple expressions without implementing some ‘plumbing’.
+Second reason is that Specifications allows defining a query criterion and simply referencing it. If you would want to do the same you’d need to make a class returning an expression, therefore it would be similar but with no composition, denial, etc. 
+Ok, you can do something like: 
+Expression<Func<T,bool>> expression = t.property==true; 
+Which is really what we can be returning, but our specification implementation allows composition and criteria encapsulation instead of spreading it directly on lambda expressions.
+Finally, the use of the composite specification pattern is not mandatory in this Architecture, for instance, instead of using a AllMatching() for specifications you can always use the filter method providing a lambda expression directly.
+
+More examples about SPECIFICATION PATTERN and LINQ:
+http://linqspecs.codeplex.com/   (by jfromaniello)
+
+
+Specifications provide us with a mechanism to know the criteria of the elements we want to search for; 
+but it does not know anything about who will perform the search operation thereof. 
+In addition to this clear separation of concerns, the creation of these elements also helps us 
+to make important domain operations, such as types of search criteria, perfectly clear. 
+Otherwise, these would be scattered around different parts of the code, making them more difficult and expensive to modify. 
+
+Finally, another advantage of specifications, as proposed here, is the possibility of performing SPECIFICATION COMPOSITION (logical operations),
+ which provides us with a simple mechanism to perform dynamic queries in LINQ.

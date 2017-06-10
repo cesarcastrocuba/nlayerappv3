@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Application_exception_ApplicationValidationExceptionDefaultMessage" xml:space="preserve">
+    <value>Validation exception, check ValidationErrors for more information</value>
+  </data>
+  <data name="Application_validation_BlogDto_Empty_Name" xml:space="preserve">
+    <value>Name is required</value>
+  </data>
+  <data name="Application_validation_BlogDto_Empty_Url" xml:space="preserve">
+    <value>Url is required</value>
+  </data>
+  <data name="Application_validation_BlogDto_Invalid_Rating" xml:space="preserve">
+    <value>Rating field is invalid</value>
+  </data>
+  <data name="Application_validation_No_Records_Found_Error" xml:space="preserve">
+    <value>No records found</value>
+  </data>
+  <data name="Application_validation_Null_Parameters_Error" xml:space="preserve">
+    <value>Null values</value>
+  </data>
+  <data name="Application_validation_PostDto_Empty_Content" xml:space="preserve">
+    <value>Content is required</value>
+  </data>
+  <data name="Application_validation_PostDto_Empty_Title" xml:space="preserve">
+    <value>Title is required</value>
+  </data>
+  <data name="Application_validation_PostDto_Invalid_BlogId" xml:space="preserve">
+    <value>BlogId field is invalid</value>
+  </data>
+  <data name="Application_validation_Validation_Error" xml:space="preserve">
+    <value>Invalid data</value>
+  </data>
+  <data name="Domain_validation_PropertyIsEmptyOrNull" xml:space="preserve">
+    <value>The {0} in {1} cannot be empty or null</value>
+  </data>
+  <data name="Domain_validation_PropertyOutOfRange" xml:space="preserve">
+    <value>The value of {0} in {1} must be greater than {2} and less than {3}</value>
+  </data>
+  <data name="Infrastructure_exception_NotMapFoundForTypeAdapter" xml:space="preserve">
+    <value>Not mapped found for type {0} to type {1}</value>
+  </data>
+  <data name="Infrastructure_exception_RegisterTypeMapConfigurationElementInvalidTypeValue" xml:space="preserve">
+    <value>The type is not a fully qualified assembly name</value>
+  </data>
+  <data name="Infrastructure_exception_RegisterTypesMapConfigurationInvalidType" xml:space="preserve">
+    <value>Invalid type, expected is RegisterTypesMapConfigurationElement</value>
+  </data>
+  <data name="Infrastructure_info_CannotAddNullEntity" xml:space="preserve">
+    <value>Cannot add null entity into {0} repository</value>
+  </data>
+  <data name="Infrastructure_info_CannotModifyNullEntity" xml:space="preserve">
+    <value>Cannot modify null item into {0} repository</value>
+  </data>
+  <data name="Infrastructure_info_CannotRemoveNullEntity" xml:space="preserve">
+    <value>Cannot remove null entity into {0} repository</value>
+  </data>
+  <data name="Infrastructure_info_CannotTrackNullEntity" xml:space="preserve">
+    <value>Cannot track null item into {0} repository</value>
+  </data>
+  <data name="Application_validation_BadRequest" xml:space="preserve">
+    <value>Bad Request</value>
+  </data>
+  <data name="Application_validation_Exception" xml:space="preserve">
+    <value>Validation exception, check ValidationErrors for more information</value>
+  </data>
+  <data name="Infrastructure_exception_InvalidEnumeratedType" xml:space="preserve">
+    <value>T must be an enumerated type</value>
+  </data>
+  <data name="Distributed_Services_info_OnExecuted" xml:space="preserve">
+    <value>On Executing {0} at {1} </value>
+  </data>
+  <data name="Distributed_Services_info_OnExecuting" xml:space="preserve">
+    <value>On Executed {0} at {1}</value>
+  </data>
+  <data name="Distributed_Services_info_Parameter" xml:space="preserve">
+    <value>Parameter: {0}</value>
+  </data>
+  <data name="Domain_exception_BankAccountCannotDeposit" xml:space="preserve">
+    <value>Cannot deposit money in locked account</value>
+  </data>
+  <data name="Domain_exception_BankAccountCannotWithdraw" xml:space="preserve">
+    <value>Cannot withdraw in bankaccount, this is locked or amount is greather than balance</value>
+  </data>
+  <data name="Domain_exception_BankAccountInvalidWithdrawAmount" xml:space="preserve">
+    <value>Invalid amount for withdraw operation</value>
+  </data>
+  <data name="Domain_exception_CannotAssociateTransientOrNullCountry" xml:space="preserve">
+    <value>Country is null or Country is in Transient state</value>
+  </data>
+  <data name="Domain_exception_CannotAssociateTransientOrNullCustomer" xml:space="preserve">
+    <value>Customer is null or Customer is in Transient state</value>
+  </data>
+  <data name="Domain_exception_CannotAssociateTransientOrNullProduct" xml:space="preserve">
+    <value>Product is null or Product is in Transient state</value>
+  </data>
+  <data name="Domain_exception_CannotTransferMoneyWhenFromIsTheSameAsTo" xml:space="preserve">
+    <value>Cannot transfer money to the same bank account</value>
+  </data>
+  <data name="Domain_exception_InvalidDataForOrderLine" xml:space="preserve">
+    <value>Invalid data in order line, check the values, amount of items must be greater than zero</value>
+  </data>
+  <data name="Domain_exception_OrderNumberSpecificationInvalidOrderNumberPattern" xml:space="preserve">
+    <value>Invalid order number pattern </value>
+  </data>
+  <data name="Domain_messages_TransactionFromMessage" xml:space="preserve">
+    <value>Deposit from account with identifier {0}</value>
+  </data>
+  <data name="Domain_messages_TransactionToMessage" xml:space="preserve">
+    <value>Withdraw to account with identifier {0}</value>
+  </data>
+  <data name="Domain_validation_BankAccountBankAccountNumberCannotBeNull" xml:space="preserve">
+    <value>The bank account number cannot be null or empty string</value>
+  </data>
+  <data name="Domain_validation_BankAccountBankCheckDigitsCannotBeNull" xml:space="preserve">
+    <value>The bank account check digits cannot be null or empty string</value>
+  </data>
+  <data name="Domain_validation_BankAccountBankNationalBankCodeCannotBeNull" xml:space="preserve">
+    <value>The bank account national bank code cannot be null or empty string</value>
+  </data>
+  <data name="Domain_validation_BankAccountBankOfficeNumberCannotBeNull" xml:space="preserve">
+    <value>The bank account office number cannot be null or empty string</value>
+  </data>
+  <data name="Domain_validation_BankAccountCustomerIdIsEmpty" xml:space="preserve">
+    <value>The customer id  in bank account cannot be empty</value>
+  </data>
+  <data name="Domain_validation_BankAccountNumberCannotBeNull" xml:space="preserve">
+    <value>The bank account number cannot be null</value>
+  </data>
+  <data name="Domain_validation_CountryCountryISOCodeCannotBeNull" xml:space="preserve">
+    <value>CountryISOCode cannot be null or empty string</value>
+  </data>
+  <data name="Domain_validation_CountryCountryNameCannotBeNull" xml:space="preserve">
+    <value>CountryName cannot be null or empty string</value>
+  </data>
+  <data name="Domain_validation_CustomerCountryIdCannotBeEmpty" xml:space="preserve">
+    <value>CountryId is not associated for this Customer</value>
+  </data>
+  <data name="Domain_validation_CustomerFirstNameCannotBeNull" xml:space="preserve">
+    <value>The FirstName property cannot be null or empty string</value>
+  </data>
+  <data name="Domain_validation_CustomerLastNameCannotBeBull" xml:space="preserve">
+    <value>The LastName property cannot be null or empty string</value>
+  </data>
+  <data name="Domain_validation_OrderCustomerIdCannotBenull" xml:space="preserve">
+    <value>Customer is null or Customer is in Transient state</value>
+  </data>
+  <data name="Domain_validation_OrderLineAmountLessThanOne" xml:space="preserve">
+    <value>The Amount property cannot be less than 1</value>
+  </data>
+  <data name="Domain_validation_OrderLineDiscountCannotBeLessThanZeroOrGreaterThanOne" xml:space="preserve">
+    <value>The Discount cannot be less than 0 or greater than 1</value>
+  </data>
+  <data name="Domain_validation_OrderLineOrderIdIsEmpty" xml:space="preserve">
+    <value>OrderLine cannot have associated order</value>
+  </data>
+  <data name="Domain_validation_OrderLineProductIdCannotBeNull" xml:space="preserve">
+    <value>The product id cannot be a empty identifier</value>
+  </data>
+  <data name="Domain_validation_OrderLineUnitPriceLessThanZero" xml:space="preserve">
+    <value>UnitPrice cannot be less than zero</value>
+  </data>
+  <data name="Domain_validation_ProductAmountLessThanZero" xml:space="preserve">
+    <value>Amount in stock cannot be less than zero</value>
+  </data>
+  <data name="Domain_validation_ProductDescriptionCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Description cannot be null or empty</value>
+  </data>
+  <data name="Domain_validation_ProductTitleCannotBeNullOrEmpty" xml:space="preserve">
+    <value>Title cannot be null or empty</value>
+  </data>
+  <data name="Domain_validation_ProductUnitPriceLessThanZero" xml:space="preserve">
+    <value>UnitPrice in stock cannot be less than zero</value>
+  </data>
+  <data name="Application_error_CannotPerformTransferInvalidAccounts" xml:space="preserve">
+    <value>Cannot perform the transfer, invalid data in accounts specifications</value>
+  </data>
+  <data name="Application_exception_InvalidCountryIdentifier" xml:space="preserve">
+    <value>The country id is empty, you cannot add a new customer without country reference</value>
+  </data>
+  <data name="Application_exception_InvalidCustomerIdentifier" xml:space="preserve">
+    <value>The customer identifier is empty</value>
+  </data>
+  <data name="Application_exception_InvalidPageIndexOrPageCount" xml:space="preserve">
+    <value>Invalid page index or page count data</value>
+  </data>
+  <data name="Application_info_OrderTotalIsGreaterCustomerCredit" xml:space="preserve">
+    <value>The order total is greater customer credit, you cannot perform new order</value>
+  </data>
+  <data name="Application_warning_CannotAddBookWithNullInformation" xml:space="preserve">
+    <value>Cannot add a new book with a null book dto</value>
+  </data>
+  <data name="Application_warning_CannotAddCustomerWithEmptyInformation" xml:space="preserve">
+    <value>Cannot add customer. The dto is null or the country identifier is empty</value>
+  </data>
+  <data name="Application_warning_CannotAddNotValidatedBankAccount" xml:space="preserve">
+    <value>Cannot add not validated bank account</value>
+  </data>
+  <data name="Application_warning_CannotAddNullBankAccountOrInvalidCustomer" xml:space="preserve">
+    <value>Cannot add null bank account or bank account without customer identifier</value>
+  </data>
+  <data name="Application_warning_CannotAddOrderWithNullInformation" xml:space="preserve">
+    <value>Cannot add a new order with a null order dto</value>
+  </data>
+  <data name="Application_warning_CannotAddSoftwareWithNullInformation" xml:space="preserve">
+    <value>Cannot add a new software with a null order dto</value>
+  </data>
+  <data name="Application_warning_CannotCreateBankAccountForInvalidCustomer" xml:space="preserve">
+    <value>Cannot create bank account for not existing customer</value>
+  </data>
+  <data name="Application_warning_CannotCreateBankAccountForNonExistingCustomer" xml:space="preserve">
+    <value>Cannot create a bank account for non existing customer</value>
+  </data>
+  <data name="Application_warning_CannotCreateOrderForNonExistingCustomer" xml:space="preserve">
+    <value>Cannot create a new order for non existing customer</value>
+  </data>
+  <data name="Application_warning_CannotGetActivitiesForInvalidOrNotExistingBankAccount" xml:space="preserve">
+    <value>Cannot get bank account activity for invalid or not existing account</value>
+  </data>
+  <data name="Application_warning_CannotGetOrdersFromEmptyCustomerId" xml:space="preserve">
+    <value>Cannot get orders from empty customer id</value>
+  </data>
+  <data name="Application_warning_CannotLockBankAccountWithEmptyIdentifier" xml:space="preserve">
+    <value>Cannot lock bank account ,the identifier is empty</value>
+  </data>
+  <data name="Application_warning_CannotLockNonExistingBankAccount" xml:space="preserve">
+    <value>Cannot lock non existing bank account, the unknown key is {0}</value>
+  </data>
+  <data name="Application_warning_CannotRemoveCustomerWithEmptyId" xml:space="preserve">
+    <value>Cannot remove customer with empty id</value>
+  </data>
+  <data name="Application_warning_CannotRemoveNonExistingCustomer" xml:space="preserve">
+    <value>Cannot remove a non existing customer</value>
+  </data>
+  <data name="Application_warning_CannotUpdateCustomerWithEmptyInformation" xml:space="preserve">
+    <value>Cannot add customer. The dto is null or the identifier is empty</value>
+  </data>
+  <data name="Application_warning_CannotUpdateNonExistingCustomer" xml:space="preserve">
+    <value>Cannot update a non existing customer</value>
+  </data>
+  <data name="Application_warning_InvalidArgumentForFindCustomer" xml:space="preserve">
+    <value>Invalid argument for FindCustomer, the customerid cannot be empty</value>
+  </data>
+  <data name="Application_warning_InvalidArgumentForFindOrders" xml:space="preserve">
+    <value>Invalid arguments when call to CustomerManagementService FindOrders</value>
+  </data>
+  <data name="Application_warning_InvalidArgumentForFindProducts" xml:space="preserve">
+    <value>Invalid arguments when call to CustomerManagementService FindProducts</value>
+  </data>
+  <data name="Application_warning_InvalidArgumentsForFindCountries" xml:space="preserve">
+    <value>Invalid arguments when call to CustomerManagementService FindCountries</value>
+  </data>
+  <data name="Application_warning_InvalidArgumentsForFindCustomers" xml:space="preserve">
+    <value>Invalid arguments when call to CustomerManagementService FindCustomers</value>
+  </data>
+</root>
