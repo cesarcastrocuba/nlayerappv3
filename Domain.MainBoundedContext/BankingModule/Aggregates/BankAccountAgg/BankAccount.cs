@@ -41,11 +41,14 @@
         {
             get
             {
-                return string.Format("ES{0} {1} {2} {0}{3}", 
-                                    this.BankAccountNumber.CheckDigits,
-                                    this.BankAccountNumber.NationalBankCode, 
-                                    this.BankAccountNumber.OfficeNumber, 
-                                    this.BankAccountNumber.AccountNumber);
+                if (this.BankAccountNumber != null)
+                    return string.Format("ES{0} {1} {2} {0}{3}",
+                                        this.BankAccountNumber.CheckDigits,
+                                        this.BankAccountNumber.NationalBankCode,
+                                        this.BankAccountNumber.OfficeNumber,
+                                        this.BankAccountNumber.AccountNumber);
+                else
+                    return "No Bank Account Provided";
             }
             set
             {

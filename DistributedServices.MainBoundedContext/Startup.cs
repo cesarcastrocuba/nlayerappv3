@@ -103,8 +103,8 @@ namespace DistributedServices.MainBoundedContext
                 c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
                 {
                     Version = "v1",
-                    Title = "DDD Anemic Monolithic N-Layered Architecture",
-                    Description = "DDD Anemic Monolithic N-Layered Architecture with .Net Core Preview 2 project (NLayerAppV3)",
+                    Title = "DDD N-Layered Architecture",
+                    Description = "DDD N-Layered Architecture with .Net Core 2 (NLayerAppV3)",
                     TermsOfService = "None",
                     Contact = new Swashbuckle.AspNetCore.Swagger.Contact { Name = "César Castro", Email = "cesar_castro_cuba@msn.com", Url = "https://www.linkedin.com/in/c%C3%A9sar-castro-91b56211/" },
                     License = new Swashbuckle.AspNetCore.Swagger.License { Name = "Use under my own License", Url = "https://www.microsoft.com/net/learn/architecture" }

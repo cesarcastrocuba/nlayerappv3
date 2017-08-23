@@ -1,13 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <AssemblyName>NLayerApp.Domain.Seedwork</AssemblyName>
     <RootNamespace>NLayerApp.Domain.Seedwork</RootNamespace>
-    <ApplicationIcon />
-    <OutputTypeEx>library</OutputTypeEx>
-    <StartupObject />
   </PropertyGroup>
 
 </Project>

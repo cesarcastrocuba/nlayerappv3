@@ -1,13 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RootNamespace>NLayerApp.Infrastructure.Crosscutting</RootNamespace>
     <AssemblyName>NLayerApp.Infrastructure.Crosscutting</AssemblyName>
-    <ApplicationIcon />
-    <OutputTypeEx>library</OutputTypeEx>
-    <StartupObject />
+    <RootNamespace>NLayerApp.Infrastructure.Crosscutting</RootNamespace>
   </PropertyGroup>
 
 </Project>

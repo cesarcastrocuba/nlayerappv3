@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <UserSecretsId>aspnet-DistributedServices.MainBoundedContext-2C3E5E12-602E-4F11-96DE-7B60BB832593</UserSecretsId>
+    <UserSecretsId>aspnet-DistributedServices.MainBoundedContext-4197E4E8-4EFF-4168-998E-2F52277E7E74</UserSecretsId>
     <AssemblyName>NLayerApp.DistributedServices.MainBoundedContext</AssemblyName>
     <RootNamespace>NLayerApp.DistributedServices.MainBoundedContext</RootNamespace>
   </PropertyGroup>
@@ -16,10 +16,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation.AspNetCore" Version="7.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0-preview1-final" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="7.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0-preview1-final" />
   </ItemGroup>
 
   <ItemGroup>
