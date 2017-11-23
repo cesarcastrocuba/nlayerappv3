@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Layers", "1-Layers", "{27C85AD1-3108-4537-A63A-CA949E593599}"
 EndProject
@@ -31,43 +31,43 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.1-Data", "1.5.1-Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.2-CrossCutting", "1.5.2-CrossCutting", "{EC754AC7-44DC-4419-A262-7282B3D19B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedServices.Seedwork", "DistributedServices.Seedwork\DistributedServices.Seedwork.csproj", "{C8AC47DB-7C9E-47C7-BF12-2ACCB3895F4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedServices.Seedwork", "DistributedServices.Seedwork\DistributedServices.Seedwork.csproj", "{C8AC47DB-7C9E-47C7-BF12-2ACCB3895F4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedServices.MainBoundedContext", "DistributedServices.MainBoundedContext\DistributedServices.MainBoundedContext.csproj", "{0716CF1A-404C-4109-98DE-096F7BE91B6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedServices.MainBoundedContext", "DistributedServices.MainBoundedContext\DistributedServices.MainBoundedContext.csproj", "{0716CF1A-404C-4109-98DE-096F7BE91B6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedServices.MainBoundedContext.Tests", "DistributedServices.MainBoundedContext.Tests\DistributedServices.MainBoundedContext.Tests.csproj", "{DFDEBE14-E453-4C24-B6EF-FF96DA92CE68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedServices.MainBoundedContext.Tests", "DistributedServices.MainBoundedContext.Tests\DistributedServices.MainBoundedContext.Tests.csproj", "{DFDEBE14-E453-4C24-B6EF-FF96DA92CE68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Seedwork", "Application.Seedwork\Application.Seedwork.csproj", "{F7677CDE-B202-4834-A9E2-7DD603962B52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Seedwork", "Application.Seedwork\Application.Seedwork.csproj", "{F7677CDE-B202-4834-A9E2-7DD603962B52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.MainBoundedContext", "Application.MainBoundedContext\Application.MainBoundedContext.csproj", "{A744C9EF-45FC-4D28-A85F-D9F66E8745DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.MainBoundedContext", "Application.MainBoundedContext\Application.MainBoundedContext.csproj", "{A744C9EF-45FC-4D28-A85F-D9F66E8745DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.MainBoundedContext.DTO", "Application.MainBoundedContext.DTO\Application.MainBoundedContext.DTO.csproj", "{A4BD591C-A87C-45D9-9F75-76F0B5FE020A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.MainBoundedContext.DTO", "Application.MainBoundedContext.DTO\Application.MainBoundedContext.DTO.csproj", "{A4BD591C-A87C-45D9-9F75-76F0B5FE020A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.MainBoundedContext.Tests", "Application.MainBoundedContext.Tests\Application.MainBoundedContext.Tests.csproj", "{36173D9B-8B19-4025-9184-F13D65A38035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.MainBoundedContext.Tests", "Application.MainBoundedContext.Tests\Application.MainBoundedContext.Tests.csproj", "{36173D9B-8B19-4025-9184-F13D65A38035}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Seedwork", "Domain.Seedwork\Domain.Seedwork.csproj", "{B4B9EEAF-BB20-4E03-A814-E1FAB2CDF4F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Seedwork", "Domain.Seedwork\Domain.Seedwork.csproj", "{B4B9EEAF-BB20-4E03-A814-E1FAB2CDF4F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Seedwork.Tests", "Domain.Seedwork.Tests\Domain.Seedwork.Tests.csproj", "{9935B399-BC96-42EF-8EC7-5DD650B979FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Seedwork.Tests", "Domain.Seedwork.Tests\Domain.Seedwork.Tests.csproj", "{9935B399-BC96-42EF-8EC7-5DD650B979FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.MainBoundedContext", "Domain.MainBoundedContext\Domain.MainBoundedContext.csproj", "{BA88F9C8-3DB9-470B-8D5D-8323AADF7591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.MainBoundedContext", "Domain.MainBoundedContext\Domain.MainBoundedContext.csproj", "{BA88F9C8-3DB9-470B-8D5D-8323AADF7591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.MainBoundedContext.Tests", "Domain.MainBoundedContext.Tests\Domain.MainBoundedContext.Tests.csproj", "{07C2FA46-5B5B-4EA5-917E-9D9440B1F3F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.MainBoundedContext.Tests", "Domain.MainBoundedContext.Tests\Domain.MainBoundedContext.Tests.csproj", "{07C2FA46-5B5B-4EA5-917E-9D9440B1F3F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.1.1-Data.Seedwork", "1.5.1.1-Data.Seedwork", "{FCAEA16B-AD88-4EB9-9570-C26F89E6CCF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.Seedwork", "Infrastructure.Data.Seedwork\Infrastructure.Data.Seedwork.csproj", "{4F3FFC65-D1F0-430D-B057-2DEBBA131049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data.Seedwork", "Infrastructure.Data.Seedwork\Infrastructure.Data.Seedwork.csproj", "{4F3FFC65-D1F0-430D-B057-2DEBBA131049}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.1.2-Data.MainBoundedContext", "1.5.1.2-Data.MainBoundedContext", "{9712C878-9BB6-4D82-B95A-C3AE3B5A4A12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.MainBoundedContext", "Infrastructure.Data.MainBoundedContext\Infrastructure.Data.MainBoundedContext.csproj", "{F4061795-D54F-48C4-B062-1F39F09044AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data.MainBoundedContext", "Infrastructure.Data.MainBoundedContext\Infrastructure.Data.MainBoundedContext.csproj", "{F4061795-D54F-48C4-B062-1F39F09044AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.MainBoundedContext.Tests", "Infrastructure.Data.MainBoundedContext.Tests\Infrastructure.Data.MainBoundedContext.Tests.csproj", "{3F498DCB-4156-4FAC-9419-36644C5C67CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data.MainBoundedContext.Tests", "Infrastructure.Data.MainBoundedContext.Tests\Infrastructure.Data.MainBoundedContext.Tests.csproj", "{3F498DCB-4156-4FAC-9419-36644C5C67CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Crosscutting", "Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj", "{9C2F9824-5987-4598-98D2-9FA91C0601EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Crosscutting", "Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj", "{9C2F9824-5987-4598-98D2-9FA91C0601EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Crosscutting.NetFramework", "Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj", "{FB27DAC7-1335-43F9-87B4-01BE2A72BA5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Crosscutting.NetFramework", "Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj", "{FB27DAC7-1335-43F9-87B4-01BE2A72BA5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Crosscutting.Tests", "Infrastructure.Crosscutting.Tests\Infrastructure.Crosscutting.Tests.csproj", "{4BE02413-3113-4D68-A311-0774447934E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Crosscutting.Tests", "Infrastructure.Crosscutting.Tests\Infrastructure.Crosscutting.Tests.csproj", "{4BE02413-3113-4D68-A311-0774447934E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
