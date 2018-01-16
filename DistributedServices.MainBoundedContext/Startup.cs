@@ -32,6 +32,8 @@ using NLayerApp.Infrastructure.Data.MainBoundedContext.BlogModule.Repositories;
 using NLayerApp.Infrastructure.Data.MainBoundedContext.UnitOfWork;
 using System.IO;
 using System.Linq;
+using FluentValidation;
+using NLayerApp.Application.MainBoundedContext.DTO;
 
 namespace DistributedServices.MainBoundedContext
 {
@@ -58,8 +60,11 @@ namespace DistributedServices.MainBoundedContext
                 options.Filters.Add(new ValidateModelAttribute()); // an instance
                 options.Filters.Add(typeof(LoggerAttribute));
             })
-            .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<BlogDTOValidator>())
-            .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<PostDTOValidator>());
+            .AddFluentValidation(fv => { });
+            
+            // can then manually register validators
+            services.AddTransient<IValidator<BlogDTO>, BlogDTOValidator>();
+            services.AddTransient<IValidator<PostDTO>, PostDTOValidator>();
 
             //Custom Exception and validation Filter
             services.AddScoped<CustomExceptionFilterAttribute>();
@@ -74,7 +79,6 @@ namespace DistributedServices.MainBoundedContext
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
-
 
             //Services
             services.AddScoped<IPostsService, PostsService>();
