@@ -1,4 +1,5 @@
-﻿using FluentValidation.AspNetCore;
+﻿using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -6,14 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.PlatformAbstractions;
 using NLayerApp.Application.MainBoundedContext.BankingModule.Services;
-using NLayerApp.Application.MainBoundedContext.DTO.Validations;
 using NLayerApp.Application.MainBoundedContext.ERPModule.Services;
-using NLayerApp.Application.MainBoundedContext.BlogModule.Services;
 using NLayerApp.DistributedServices.MainBoundedContext;
-using NLayerApp.DistributedServices.MainBoundedContext.Filters;
-using NLayerApp.Domain.MainBoundedContext.BlogModule.Aggregates.BlogAgg;
-using NLayerApp.Domain.MainBoundedContext.Aggregates.ImageAgg;
-using NLayerApp.Domain.MainBoundedContext.Aggregates.PostAgg;
+using NLayerApp.DistributedServices.Seedwork.Filters;
 using NLayerApp.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
 using NLayerApp.Domain.MainBoundedContext.BankingModule.Services;
 using NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
@@ -28,12 +24,8 @@ using NLayerApp.Infrastructure.Crosscutting.NetFramework.Validator;
 using NLayerApp.Infrastructure.Crosscutting.Validator;
 using NLayerApp.Infrastructure.Data.MainBoundedContext.BankingModule.Repositories;
 using NLayerApp.Infrastructure.Data.MainBoundedContext.ERPModule.Repositories;
-using NLayerApp.Infrastructure.Data.MainBoundedContext.BlogModule.Repositories;
 using NLayerApp.Infrastructure.Data.MainBoundedContext.UnitOfWork;
 using System.IO;
-using System.Linq;
-using FluentValidation;
-using NLayerApp.Application.MainBoundedContext.DTO;
 
 namespace DistributedServices.MainBoundedContext
 {
@@ -50,8 +42,6 @@ namespace DistributedServices.MainBoundedContext
         public void ConfigureServices(IServiceCollection services)
         {
             // Configure EntityFramework to use an InMemory database.
-            services.AddDbContext<BloggingContext>();
-
             services.AddDbContext<MainBCUnitOfWork>();
 
             // Add framework services.
@@ -62,31 +52,21 @@ namespace DistributedServices.MainBoundedContext
             })
             .AddFluentValidation(fv => { });
             
-            // can then manually register validators
-            services.AddTransient<IValidator<BlogDTO>, BlogDTOValidator>();
-            services.AddTransient<IValidator<PostDTO>, PostDTOValidator>();
-
             //Custom Exception and validation Filter
             services.AddScoped<CustomExceptionFilterAttribute>();
 
             //Repositories
-            services.AddScoped<IImageRepository, ImageRepository>();
-            services.AddScoped<IPostRepository, PostRepository>();
-            services.AddScoped<IBlogRepository, BlogRepository>();
-
             services.AddScoped<IBankAccountRepository, BankAccountRepository>();
             services.AddScoped<ICountryRepository, CountryRepository>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
 
-            //Services
-            services.AddScoped<IPostsService, PostsService>();
-            services.AddScoped<IBlogsService, BlogsService>();
-
+            
             // Domain Services
             services.AddScoped<IBankTransferService, BankTransferService>();
 
+            //Services
             services.AddScoped<ISalesAppService, SalesAppService>();
             services.AddScoped<ICustomerAppService, CustomerAppService>();
             services.AddScoped<IBankAppService, BankAppService>();
@@ -123,8 +103,13 @@ namespace DistributedServices.MainBoundedContext
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, BloggingContext context1, MainBCUnitOfWork context2)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, MainBCUnitOfWork context1)
         {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -142,7 +127,6 @@ namespace DistributedServices.MainBoundedContext
             });
 
             DbInitializer.Initialize(context1);
-            DbInitializer.Initialize(context2);
         }
     }
 }

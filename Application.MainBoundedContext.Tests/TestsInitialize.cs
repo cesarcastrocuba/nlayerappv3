@@ -18,7 +18,7 @@
         {
             EntityValidatorFactory.SetCurrent(new DataAnnotationsEntityValidatorFactory());
 
-            var dto = new BlogDTO(); // this is only to force  current domain to load de .DTO assembly and all profiles
+            var dto = new CountryDTO(); // this is only to force  current domain to load de .DTO assembly and all profiles
 
             var adapterfactory = new AutomapperTypeAdapterFactory();
             TypeAdapterFactory.SetCurrent(adapterfactory);

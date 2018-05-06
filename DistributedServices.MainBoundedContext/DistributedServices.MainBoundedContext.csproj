@@ -12,12 +12,17 @@
     <DocumentationFile>bin\Debug\netcoreapp2.0\NLayerApp.DistributedServices.MainBoundedContext.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.0\NLayerApp.DistributedServices.MainBoundedContext.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Properties\PublishProfiles\DistributedServicesMainBoundedContext20170823103753 - Web Deploy.pubxml" />
     <None Remove="Properties\PublishProfiles\nlayerappv3 - Web Deploy.pubxml" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Filters\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
@@ -36,6 +41,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Application.MainBoundedContext\Application.MainBoundedContext.csproj" />
     <ProjectReference Include="..\Application.Seedwork\Application.Seedwork.csproj" />
+    <ProjectReference Include="..\DistributedServices.Seedwork\DistributedServices.Seedwork.csproj" />
     <ProjectReference Include="..\Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj" />
     <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext\Infrastructure.Data.MainBoundedContext.csproj" />
   </ItemGroup>

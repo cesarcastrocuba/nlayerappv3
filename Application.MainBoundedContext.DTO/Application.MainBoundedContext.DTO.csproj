@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Validations\" />
+  </ItemGroup>
+
 </Project>

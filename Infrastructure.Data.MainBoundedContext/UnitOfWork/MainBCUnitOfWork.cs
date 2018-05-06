@@ -6,14 +6,7 @@
     using NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
     using NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg;
     using NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
-    using NLayerApp.Domain.Seedwork;
-    using NLayerApp.Infrastructure.Data.Seedwork;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Security.Claims;
-    using System.Threading;
-    using System.Threading.Tasks;
+    using NLayerApp.Infrastructure.Data.Seedwork.UnitOfWork;
 
     public class MainBCUnitOfWork : BaseContext
     {
