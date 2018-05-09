@@ -29,11 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application.BlogContext.DTO\Application.BlogBoundedContext.DTO.csproj" />
-    <ProjectReference Include="..\Application.BlogContext\Application.BlogBoundedContext.csproj" />
+    <ProjectReference Include="..\Application.BlogBoundedContext.DTO\Application.BlogBoundedContext.DTO.csproj" />
+    <ProjectReference Include="..\Application.BlogBoundedContext\Application.BlogBoundedContext.csproj" />
     <ProjectReference Include="..\DistributedServices.Seedwork\DistributedServices.Seedwork.csproj" />
+    <ProjectReference Include="..\Domain.BlogBoundedContext\Domain.BlogBoundedContext.csproj" />
     <ProjectReference Include="..\Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj" />
-    <ProjectReference Include="..\Infrastructure.Data.BlogContext\Infrastructure.Data.BlogBoundedContext.csproj" />
+    <ProjectReference Include="..\Infrastructure.Data.BlogBoundedContext\Infrastructure.Data.BlogBoundedContext.csproj" />
   </ItemGroup>
 
 </Project>

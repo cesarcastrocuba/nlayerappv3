@@ -69,29 +69,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Crosscutting
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Crosscutting.Tests", "Infrastructure.Crosscutting.Tests\Infrastructure.Crosscutting.Tests.csproj", "{4BE02413-3113-4D68-A311-0774447934E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.BlogBoundedContext", "Domain.BlogContext\Domain.BlogBoundedContext.csproj", "{362E67C7-CE7F-4BB3-9DBB-BFAC382CD66A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.BlogBoundedContext", "Domain.BlogBoundedContext\Domain.BlogBoundedContext.csproj", "{362E67C7-CE7F-4BB3-9DBB-BFAC382CD66A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data.BlogBoundedContext", "Infrastructure.Data.BlogContext\Infrastructure.Data.BlogBoundedContext.csproj", "{F44C3027-8922-4B1B-88D7-80F199729C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data.BlogBoundedContext", "Infrastructure.Data.BlogBoundedContext\Infrastructure.Data.BlogBoundedContext.csproj", "{F44C3027-8922-4B1B-88D7-80F199729C85}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4.3-BlogBoundedContext", "1.4.3-BlogBoundedContext", "{BDFA3E38-AB8C-446A-AEE0-7ED290955E02}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.1.3-Data.BlogBoundedContext", "1.5.1.3-Data.BlogBoundedContext", "{9ED1A1B0-29BB-4162-B6B1-E7D2222061B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data.BlogBoundedContext.Tests", "Infrastructure.Data.BlogContext.Tests\Infrastructure.Data.BlogBoundedContext.Tests.csproj", "{C96406CE-FC3B-481B-927A-500106FD52D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Data.BlogBoundedContext.Tests", "Infrastructure.Data.BlogBoundedContext.Tests\Infrastructure.Data.BlogBoundedContext.Tests.csproj", "{C96406CE-FC3B-481B-927A-500106FD52D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3.3-BlogBoundedContext", "1.3.3-BlogBoundedContext", "{6F8B6899-6AC6-4BA7-BD51-B9CC368137CD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.BlogBoundedContext", "Application.BlogContext\Application.BlogBoundedContext.csproj", "{FE274412-4842-4872-8164-EF72EC1F924A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.BlogBoundedContext", "Application.BlogBoundedContext\Application.BlogBoundedContext.csproj", "{FE274412-4842-4872-8164-EF72EC1F924A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.BlogBoundedContext.DTO", "Application.BlogContext.DTO\Application.BlogBoundedContext.DTO.csproj", "{D9EA37EE-6A52-458E-BCE3-FE1746641BBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.BlogBoundedContext.DTO", "Application.BlogBoundedContext.DTO\Application.BlogBoundedContext.DTO.csproj", "{D9EA37EE-6A52-458E-BCE3-FE1746641BBA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.BlogBoundedContext.Tests", "Application.BlogContext.Tests\Application.BlogBoundedContext.Tests.csproj", "{D994A78A-6EEA-49F8-8338-8C21AAB0D5E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.BlogBoundedContext.Tests", "Application.BlogBoundedContext.Tests\Application.BlogBoundedContext.Tests.csproj", "{D994A78A-6EEA-49F8-8338-8C21AAB0D5E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2.3-BlogContext", "1.2.3-BlogContext", "{E8002505-7B0C-4BDD-9777-11427F859BDA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedServices.BlogBoundedContext", "DistributedServices.BlogContext\DistributedServices.BlogBoundedContext.csproj", "{E98EFA39-068B-4E69-AE8B-7D52B0FE4C0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedServices.BlogBoundedContext", "DistributedServices.BlogBoundedContext\DistributedServices.BlogBoundedContext.csproj", "{E98EFA39-068B-4E69-AE8B-7D52B0FE4C0C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedServices.BlogBoundedContext.Tests", "DistributedServices.BlogContext.Tests\DistributedServices.BlogBoundedContext.Tests.csproj", "{B923D25E-9A9C-4A09-AF72-4D385223B8FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedServices.BlogBoundedContext.Tests", "DistributedServices.BlogBoundedContext.Tests\DistributedServices.BlogBoundedContext.Tests.csproj", "{B923D25E-9A9C-4A09-AF72-4D385223B8FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain.BlogContext\Domain.BlogBoundedContext.csproj" />
+    <ProjectReference Include="..\Domain.BlogBoundedContext\Domain.BlogBoundedContext.csproj" />
     <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Seedwork.csproj" />
   </ItemGroup>
 

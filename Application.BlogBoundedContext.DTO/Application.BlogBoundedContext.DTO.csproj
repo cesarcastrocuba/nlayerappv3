@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain.BlogContext\Domain.BlogBoundedContext.csproj" />
+    <ProjectReference Include="..\Domain.BlogBoundedContext\Domain.BlogBoundedContext.csproj" />
   </ItemGroup>
 
 </Project>

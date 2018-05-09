@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application.BlogContext\Application.BlogBoundedContext.csproj" />
+    <ProjectReference Include="..\Application.BlogBoundedContext\Application.BlogBoundedContext.csproj" />
     <ProjectReference Include="..\Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj" />
   </ItemGroup>
 

@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application.BlogContext.DTO\Application.BlogBoundedContext.DTO.csproj" />
+    <ProjectReference Include="..\Application.BlogBoundedContext.DTO\Application.BlogBoundedContext.DTO.csproj" />
     <ProjectReference Include="..\Application.Seedwork\Application.Seedwork.csproj" />
-    <ProjectReference Include="..\Domain.BlogContext\Domain.BlogBoundedContext.csproj" />
+    <ProjectReference Include="..\Domain.BlogBoundedContext\Domain.BlogBoundedContext.csproj" />
   </ItemGroup>
 
 </Project>
