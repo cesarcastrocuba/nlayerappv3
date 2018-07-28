@@ -25,11 +25,11 @@ namespace NLayerApp.DistributedServices.Seedwork.Controllers
         }
 
         // GET api/Entity/id
-        [HttpGet("{id}")]
-        public virtual async Task<TEntityDTO> Get(int id)
+        [HttpGet("GetById/{id}")]
+        public virtual async Task<TEntityDTO> GetById(int id)
         {
             return await _service.GetDTOAsync(id);
-        }        
+        }
 
         // POST api/Entity
         [HttpPost]
@@ -40,28 +40,28 @@ namespace NLayerApp.DistributedServices.Seedwork.Controllers
 
         // POST api/Entity/PostItems
         [HttpPost("PostItems")]
-        public virtual async Task<IEnumerable<TEntityDTO>> Post([FromBody]IEnumerable<TEntityDTO> entitiesDTO)
+        public virtual async Task<IEnumerable<TEntityDTO>> PostItems([FromBody]IEnumerable<TEntityDTO> entitiesDTO)
         {
             return await _service.AddAsync(entitiesDTO.ToList());
         }
 
-        // PUT api/Entity
+        //// PUT api/Entity
         [HttpPut()]
         public virtual async Task<TEntityDTO> Put([FromBody]TEntityDTO entityDTO)
         {
             return await _service.ModifyAsync(entityDTO);
         }
-        
-        // PUT api/Entity/5
+
+        // PUT api/Entity/PutWithId/5
         [HttpPut("PutWithId/{id}")]
-        public virtual async Task<TEntityDTO> Put(int id, [FromBody]TEntityDTO entityDTO)
+        public virtual async Task<TEntityDTO> PutWithId(int id, [FromBody]TEntityDTO entityDTO)
         {
             return await _service.ModifyAsync(id, entityDTO);
         }
 
         // PUT api/Entity/PutItems
         [HttpPut("PutItems")]
-        public virtual async Task<IEnumerable<TEntityDTO>> Put([FromBody]IEnumerable<TEntityDTO> entitiesDTO)
+        public virtual async Task<IEnumerable<TEntityDTO>> PutItems([FromBody]IEnumerable<TEntityDTO> entitiesDTO)
         {
             return await _service.AddAsync(entitiesDTO.ToList());
         }
@@ -75,7 +75,7 @@ namespace NLayerApp.DistributedServices.Seedwork.Controllers
 
         // DELETE api/Entity/DeleteItems
         [HttpDelete("DeleteItems")]
-        public virtual async Task Delete(IEnumerable<int> ids)
+        public virtual async Task DeleteItems(IEnumerable<int> ids)
         {
             await _service.RemoveAsync(ids);
         }

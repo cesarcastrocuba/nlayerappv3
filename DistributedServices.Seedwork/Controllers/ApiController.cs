@@ -23,12 +23,12 @@ namespace NLayerApp.DistributedServices.Seedwork.Controllers
             return _service.GetAllDTO();
         }
 
-        // GET api/Entity/id
-        [HttpGet("{id}")]
-        public virtual TEntityDTO Get(int id)
+        // GET api/Entity/GetById/id
+        [HttpGet("GetById/{id}")]
+        public virtual TEntityDTO GetById(int id)
         {
             return _service.GetDTO(id);
-        }        
+        }
 
         // POST api/Entity
         [HttpPost]
@@ -39,7 +39,7 @@ namespace NLayerApp.DistributedServices.Seedwork.Controllers
 
         // POST api/Entity/PostItems
         [HttpPost("PostItems")]
-        public virtual IEnumerable<TEntityDTO> Post([FromBody]IEnumerable<TEntityDTO> entitiesDTO)
+        public virtual IEnumerable<TEntityDTO> PostItems([FromBody]IEnumerable<TEntityDTO> entitiesDTO)
         {
             return _service.Add(entitiesDTO.ToList());
         }
@@ -50,17 +50,17 @@ namespace NLayerApp.DistributedServices.Seedwork.Controllers
         {
             return _service.Modify(entityDTO);
         }
-        
-        // PUT api/Entity/5
+
+        // PUT api/Entity/PutWithId/5
         [HttpPut("PutWithId/{id}")]
-        public virtual TEntityDTO Put(int id, [FromBody]TEntityDTO entityDTO)
+        public virtual TEntityDTO PutWithId(int id, [FromBody]TEntityDTO entityDTO)
         {
             return _service.Modify(id, entityDTO);
         }
 
         // PUT api/Entity/PutItems
         [HttpPut("PutItems")]
-        public virtual IEnumerable<TEntityDTO> Put([FromBody]IEnumerable<TEntityDTO> entitiesDTO)
+        public virtual IEnumerable<TEntityDTO> PutItems([FromBody]IEnumerable<TEntityDTO> entitiesDTO)
         {
             return _service.Add(entitiesDTO.ToList());
         }
@@ -74,7 +74,7 @@ namespace NLayerApp.DistributedServices.Seedwork.Controllers
 
         // DELETE api/Entity/DeleteItems
         [HttpDelete("DeleteItems")]
-        public virtual void Delete(IEnumerable<int> ids)
+        public virtual void DeleteItems(IEnumerable<int> ids)
         {
             _service.Remove(ids);
         }

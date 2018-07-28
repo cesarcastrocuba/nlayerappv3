@@ -99,7 +99,7 @@
         {
             foreach (var item in items)
             {
-                _repository.Remove(item);
+                if (item != null) _repository.Remove(item);
             }
             _repository.UnitOfWork.Commit();
         }
@@ -107,7 +107,7 @@
         {
             foreach (var item in items)
             {
-                _repository.Remove(item);
+                if (item != null) _repository.Remove(item);
             }
             await _repository.UnitOfWork.CommitAsync();
         }
@@ -367,9 +367,9 @@
 
             List<TEntity> entities = new List<TEntity>();
 
-            foreach(var id in ids)
+            foreach (var id in ids)
             {
-                entities.Add(this.Get(id));
+                if (id != null) entities.Add(this.Get(id));
             }
 
             this.RemoveBase(entities);
@@ -430,7 +430,7 @@
 
             foreach (var id in ids)
             {
-                entities.Add(this.Get(id));
+                if (id != null) entities.Add(this.Get(id));
             }
 
             await this.RemoveBaseAsync(entities);
@@ -854,7 +854,7 @@
         public virtual void Dispose()
         {
             _repository.Dispose();
-        } 
+        }
         #endregion
 
 
