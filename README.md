@@ -1,13 +1,18 @@
 # NLayerAppV3
 
-This N-Layered Architecture with .Net Core 2 project (NLayerAppV3) is retro rebuild new code project based on DDD N-LayeredArchitecture Version 2.
-It contains all DDD Layers where the developer and software architect may reuse to implement a .Net Core WebApi (Version 2) for Banking and Blog Contexts.
-Why to use .NET Core 2.0? We need to use this version because of EF Core Complex Types - Value Object implementation (OwnsOne) and TransactionScope implementation using in Application Layer.
-This project is a tribute to the recent visit to Madrid of Cesar de la Torre in order to give us a amazing conference called 'Microservices Architectures' [https://geeks.ms/plainnews/2017/05/04/microservices-architectures/].
+This N-Layered Architecture with .Net Core 2.1 project (NLayerAppV3) is retro rebuild new code project based on DDD N-LayeredArchitecture Version 2.
+It contains all DDD Layers where the developer and software architect may reuse to implement a .Net Core WebApi (Version 2.1) for Banking and Blog Contexts.
+Why to use .NET Core 2.1? We need to use this version because of EF Core Complex Types - Value Object implementation (OwnsOne) and TransactionScope implementation using in Application Layer.
+This project is a tribute to the recent visit to Madrid of Cesar de la Torre in order to give us an amazing conference called 'Microservices Architectures' [https://geeks.ms/plainnews/2017/05/04/microservices-architectures/].
+
+## Demo
+
+- Main Bounded Context [http://nlayerappv3mainboundedcontext.azurewebsites.net]
+- Blog Bounded Context [http://nlayerappv3blogboundedcontext.azurewebsites.net]
 
 ## Getting Started
 
-Install the .NET Core 2.0 runtime for your host environment from [https://www.microsoft.com/net/core/] (https://www.microsoft.com/net/core/)
+Install the .NET Core 2.1 runtime for your host environment from [https://www.microsoft.com/net/core/] (https://www.microsoft.com/net/core/)
 
 In a terminal, navigate to the folder of this project and type the following to restore the dependencies:
 
