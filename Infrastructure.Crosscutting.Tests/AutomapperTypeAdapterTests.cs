@@ -6,13 +6,18 @@ using Xunit;
 
 namespace NLayerApp.Infrastructure.Crosscutting.Tests
 {
-    public class AutomapperTypeAdapterTests
+    public class AutomapperTypeAdapterTests : IClassFixture<AutomapperInitializer>
     {
+        protected AutomapperInitializer fixture;
+
+        public AutomapperTypeAdapterTests(AutomapperInitializer fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void AutoMapperTypeAdapterAdaptEntity()
         {
-            //Arrange
-            Mapper.Initialize(cfg => cfg.AddProfile(new TypeAdapterProfile()));
             var typeAdapter = new AutomapperTypeAdapter();
 
             var blog = new Blog()
@@ -39,8 +44,6 @@ namespace NLayerApp.Infrastructure.Crosscutting.Tests
         [Fact]
         public void AutoMapperTypeAdapterAdaptEntityEnumerable()
         {
-            //Arrange
-            Mapper.Initialize(cfg => cfg.AddProfile(new TypeAdapterProfile()));
             var typeAdapter = new AutomapperTypeAdapter();
 
             var blog = new Blog()

@@ -13,8 +13,17 @@
     using NLayerApp.Application.MainBoundedContext.ERPModule;
     using Xunit;
 
-    public class CountryAdapterTests : TestsInitialize
+    [Collection("Our Test Collection #2")]
+
+    public class CountryAdapterTests 
     {
+        protected TestsInitialize fixture;
+
+        public CountryAdapterTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void CountryToCountryDTOAdapter()
         {

@@ -15,10 +15,11 @@ using Xunit;
 
 namespace NLayerApp.DistributedServices.BlogBoundedContext.Tests
 {
+    [Collection("Our Test Collection #5")]
     /// <summary>
     /// Unit and integration tests for the /blogs API main route.
     /// </summary>
-    public class BlogsIntegrationTests : IClassFixture<IntegrationTestsInitialize>
+    public class BlogsIntegrationTests 
     {
         protected IntegrationTestsInitialize fixture;
         public BlogsIntegrationTests(IntegrationTestsInitialize fixture)
@@ -29,7 +30,7 @@ namespace NLayerApp.DistributedServices.BlogBoundedContext.Tests
         {
             // Use the test server to make in-process API calls.
 
-            var response = await fixture.server.CreateRequest(string.Format("/api/blogs/{0}", id))
+            var response = await fixture.server.CreateRequest(string.Format("/api/blogs/getbyid/{0}", id))
                 .SendAsync("GET");
 
             // Assert 

@@ -13,8 +13,17 @@
     using System.Linq;
     using Xunit;
 
-    public class BankAppServiceTests : TestsInitialize
+    [Collection("Our Test Collection #2")]
+
+    public class BankAppServiceTests 
     {
+        protected TestsInitialize fixture;
+
+        public BankAppServiceTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void LockBankAccountReturnFalseIfIdentifierIsEmpty()
         {

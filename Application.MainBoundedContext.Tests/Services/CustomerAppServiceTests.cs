@@ -14,8 +14,17 @@
     using System.Linq.Expressions;
     using Xunit;
 
-    public class CustomerAppServiceTests : TestsInitialize
+    [Collection("Our Test Collection #2")]
+
+    public class CustomerAppServiceTests 
     {
+        protected TestsInitialize fixture;
+
+        public CustomerAppServiceTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void AddNewCustomerThrowExceptionIfCustomerDtoIsNull()
         {

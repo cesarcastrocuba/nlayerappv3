@@ -8,8 +8,17 @@
     using System.Linq;
     using Xunit;
 
-    public class CustomerAdaperTests : TestsInitialize
+    [Collection("Our Test Collection #2")]
+
+    public class CustomerAdaperTests 
     {
+        protected TestsInitialize fixture;
+
+        public CustomerAdaperTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void CustomerToCustomerDTOAdapt()
         {

@@ -10,8 +10,17 @@
     using System.Linq;
     using Xunit;
 
-    public class OrderAdapterTests : TestsInitialize
+    [Collection("Our Test Collection #2")]
+
+    public class OrderAdapterTests 
     {
+        protected TestsInitialize fixture;
+
+        public OrderAdapterTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void OrderToOrderDTOAdapter()
         {

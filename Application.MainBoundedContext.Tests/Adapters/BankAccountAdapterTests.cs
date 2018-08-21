@@ -10,8 +10,16 @@
     using System.Linq;
     using Xunit;
 
-    public class BankAccountAdapterTests : TestsInitialize
+    [Collection("Our Test Collection #2")]
+
+    public class BankAccountAdapterTests 
     {
+        protected TestsInitialize fixture;
+
+        public BankAccountAdapterTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
         [Fact]
         public void AdaptBankActivityToBankActivityDTO()
         {

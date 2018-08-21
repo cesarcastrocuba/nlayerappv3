@@ -6,8 +6,17 @@
     using System.Collections.Generic;
     using Xunit;
 
-    public class ProductAdapterTests : TestsInitialize
+    [Collection("Our Test Collection #2")]
+
+    public class ProductAdapterTests 
     {
+        protected TestsInitialize fixture;
+
+        public ProductAdapterTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void ProductToProductDTOAdapter()
         {

@@ -7,13 +7,21 @@
     using NLayerApp.Infrastructure.Crosscutting.NetFramework.Localization;
     using NLayerApp.Infrastructure.Crosscutting.NetFramework.Validator;
     using NLayerApp.Infrastructure.Crosscutting.Validator;
+    using System;
+    using Xunit;
 
-    public class TestsInitialize
+    public class TestsInitialize : IDisposable
     {
         public TestsInitialize()
         {
             InitializeFactories();
         }
+
+        public void Dispose()
+        {
+            //throw new NotImplementedException();
+        }
+
         private void InitializeFactories()
         {
             EntityValidatorFactory.SetCurrent(new DataAnnotationsEntityValidatorFactory());
@@ -28,5 +36,13 @@
 
         }
     }
-    
+
+    [CollectionDefinition("Our Test Collection #2")]
+    public class Collection2 : ICollectionFixture<TestsInitialize>
+    {
+        // This class has no code, and is never created. Its purpose is simply
+        // to be the place to apply [CollectionDefinition] and all the
+        // ICollectionFixture<> interfaces.
+    }
+
 }

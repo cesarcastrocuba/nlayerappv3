@@ -7,13 +7,20 @@
     using NLayerApp.Infrastructure.Crosscutting.NetFramework.Localization;
     using NLayerApp.Infrastructure.Crosscutting.NetFramework.Validator;
     using NLayerApp.Infrastructure.Crosscutting.Validator;
+    using System;
 
-    public class TestsInitialize
+    public class TestsInitialize : IDisposable
     {
         public TestsInitialize()
         {
             InitializeFactories();
         }
+
+        public void Dispose()
+        {
+            //throw new NotImplementedException();
+        }
+
         private void InitializeFactories()
         {
             EntityValidatorFactory.SetCurrent(new DataAnnotationsEntityValidatorFactory());

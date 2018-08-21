@@ -12,11 +12,18 @@
     using System.Linq;
     using System.Threading.Tasks;
     using Xunit;
-    public class BlogsUnitTests : TestsInitialize
+
+    [Collection("Our Test Collection #4")]
+
+    public class BlogsUnitTests 
     {
         private IBlogsService _blogsService;
-        public BlogsUnitTests()
+        protected TestsInitialize fixture;        
+
+        public BlogsUnitTests(TestsInitialize fixture)
         {
+            this.fixture = fixture;
+
             IQueryable<Blog> _fakeBlogs = new List<Blog>() {
              new Blog() { BlogId = 1, Name = "Blog 1", Url = "Url 1", Rating = 1 },
              new Blog() { BlogId = 2, Name = "Blog 2", Url = "Url 2", Rating = 2 },

@@ -6,8 +6,18 @@
     using System.Collections.Generic;
     using Xunit;
     using System.Linq;
-    public class BlogAdapterTests : TestsInitialize
+
+    [Collection("Our Test Collection #3")]
+
+    public class BlogAdapterTests : IClassFixture<TestsInitialize>
     {
+        protected TestsInitialize fixture;
+
+        public BlogAdapterTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void BlogToBlogDTOAdapter()
         {

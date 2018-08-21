@@ -18,8 +18,17 @@ namespace NLayerApp.Application.MainBoundedContext.Tests.Services
     using System.Linq.Expressions;
     using Xunit;
 
-    public class SalesAppServiceTests : TestsInitialize
+    [Collection("Our Test Collection #2")]
+
+    public class SalesAppServiceTests 
     {
+        protected TestsInitialize fixture;
+
+        public SalesAppServiceTests(TestsInitialize fixture)
+        {
+            this.fixture = fixture;
+        }
+
         [Fact]
         public void FindOrdersInPageThrowArgumentExceptionWhenPageDataIsInvalid()
         {
