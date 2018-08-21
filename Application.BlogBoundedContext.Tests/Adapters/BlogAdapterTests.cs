@@ -8,11 +8,9 @@
     using System.Linq;
 
     [Collection("Our Test Collection #3")]
-
-    public class BlogAdapterTests : IClassFixture<TestsInitialize>
+    public class BlogAdapterTests 
     {
         protected TestsInitialize fixture;
-
         public BlogAdapterTests(TestsInitialize fixture)
         {
             this.fixture = fixture;

@@ -14,8 +14,7 @@
     using Xunit;
 
     [Collection("Our Test Collection #4")]
-
-    public class BlogsUnitTests 
+    public class BlogsUnitTests
     {
         private IBlogsService _blogsService;
         protected TestsInitialize fixture;        

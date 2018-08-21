@@ -15,14 +15,14 @@ using Xunit;
 
 namespace NLayerApp.DistributedServices.BlogBoundedContext.Tests
 {
-    [Collection("Our Test Collection #5")]
+    [Collection("Our Test Collection #4")]
     /// <summary>
     /// Unit and integration tests for the /blogs API main route.
     /// </summary>
     public class BlogsIntegrationTests 
     {
-        protected IntegrationTestsInitialize fixture;
-        public BlogsIntegrationTests(IntegrationTestsInitialize fixture)
+        protected TestsInitialize fixture;
+        public BlogsIntegrationTests(TestsInitialize fixture)
         {
             this.fixture = fixture;
         }
