@@ -32,7 +32,7 @@ namespace NLayerApp.Domain.Seedwork.Tests
 
             //Act
             Exception ex = Assert.Throws<ArgumentNullException>(() => adHocSpecification = new DirectSpecification<SampleEntity>(spec));
-            Assert.IsType(typeof(ArgumentNullException), ex);
+            Assert.IsType<ArgumentNullException>(ex);
 
         }
         [Fact]
@@ -126,7 +126,7 @@ namespace NLayerApp.Domain.Seedwork.Tests
 
             Exception ex = Assert.Throws<ArgumentNullException>(() => composite = new AndSpecification<SampleEntity>(null, rightAdHocSpecification));
 
-            Assert.IsType(typeof(ArgumentNullException), ex);
+            Assert.IsType<ArgumentNullException>(ex);
 
         }
         [Fact]
@@ -146,7 +146,7 @@ namespace NLayerApp.Domain.Seedwork.Tests
             AndSpecification<SampleEntity> composite;
 
             Exception ex = Assert.Throws<ArgumentNullException>(() => composite = new AndSpecification<SampleEntity>(leftAdHocSpecification, null));
-            Assert.IsType(typeof(ArgumentNullException), ex);
+            Assert.IsType<ArgumentNullException>(ex);
 
         }
         [Fact]
@@ -166,7 +166,7 @@ namespace NLayerApp.Domain.Seedwork.Tests
             OrSpecification<SampleEntity> composite;
 
             Exception ex = Assert.Throws<ArgumentNullException>(() => composite = new OrSpecification<SampleEntity>(null, rightAdHocSpecification));
-            Assert.IsType(typeof(ArgumentNullException), ex);
+            Assert.IsType<ArgumentNullException>(ex);
         }
         [Fact]
         public void CreateOrSpecificationNullRightSpecThrowArgumentNullExceptionTest()
@@ -185,7 +185,7 @@ namespace NLayerApp.Domain.Seedwork.Tests
             OrSpecification<SampleEntity> composite;
 
             Exception ex = Assert.Throws<ArgumentNullException>(() => composite = new OrSpecification<SampleEntity>(leftAdHocSpecification, null));
-            Assert.IsType(typeof(ArgumentNullException), ex);
+            Assert.IsType<ArgumentNullException>(ex);
         }
         [Fact]
         public void UseSpecificationLogicAndOperatorTest()
@@ -399,7 +399,7 @@ namespace NLayerApp.Domain.Seedwork.Tests
             //Act
             
             Exception ex = Assert.Throws<ArgumentNullException>(() => notSpec = new NotSpecification<SampleEntity>((ISpecification<SampleEntity>)null));
-            Assert.IsType(typeof(ArgumentNullException), ex);
+            Assert.IsType<ArgumentNullException>(ex);
         }
         [Fact]
         public void CreateNotSpecificationNullCriteriaThrowArgumentNullExceptionTest()
@@ -409,7 +409,7 @@ namespace NLayerApp.Domain.Seedwork.Tests
 
             //Act
             Exception ex = Assert.Throws<ArgumentNullException>(() => notSpec = new NotSpecification<SampleEntity>((Expression<Func<SampleEntity, bool>>)null));
-            Assert.IsType(typeof(ArgumentNullException), ex);
+            Assert.IsType<ArgumentNullException>(ex);
         }
         [Fact]
         public void CreateTrueSpecificationTest()
